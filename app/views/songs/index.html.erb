@@ -1,5 +1,28 @@
-<h1>All Songs</h1>
-<% @songs.each do |song| %>
-  <h2><%= song.title %></h2>
-  <p>Plays: <%= song.play_count %></p>
-<% end %>
+<html>
+  <head>
+    <link rel="stylesheets" href="reset.css">
+    <link rel="stylesheets" href="songs.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Shrikhand" rel="stylesheet">
+    <title>Songs</title>
+  </head>
+  <body>
+  <!-- <div class="container"> -->
+    <div class= "header">
+      <h1>Songs</h1>
+    </div>
+
+    <div class= "songs-container">
+        <% @songs.each do |song| %>
+        <div class="song-items">
+          <ul>
+            <li><img src="/assets/vinyl.jpg" alt="record"></li>
+            <li><%= song.title %></li>
+            <li><%= song.length %> seconds</li>
+            <li>Play Count: <%= song.play_count %></li>
+          </ul>
+        </div>
+        <% end %>
+    </div>
+  <!-- </div> -->
+</body>
+</html>

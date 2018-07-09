@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(232, 255, 246);
+  height: 100vw;
+}
+
+.header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Shrikhand', cursive;
+  font-size: 2em;
+}
+
+.songs-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.song-items {
+  margin: 30px;
+  text-align: center;
+  border-radius: 5%;
+  background-color: rgba(235, 235, 235, 0.57);
+}
+
+.song-items ul {
+  padding: 20px;
+}
+
+.song-items li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 2px;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
